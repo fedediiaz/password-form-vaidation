@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="formcss.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="" id="registration-form">
+            <fieldset class="password">
+                <div class="password__field">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Enter Password"
+                    />
+                </div>
+                <div class="password__field">
+                    <label for="confirmPassword">Confirm password</label>
+                    <input
+                        type="password"
+                        name="confirm-password"
+                        id="confirmPassword"
+                        placeholder="Re-type your password"
+                    />
+                </div>
+                <div class="display-errors">
+                    <span id="error-uppercase"
+                        >At least 1 uppercase letter</span
+                    >
+                    <span id="error-lowercase"
+                        >At least 1 lowercase letter</span
+                    >
+                    <span id="error-number">At least 1 digit</span>
+                    <span id="error-symbol">At least 1 symbol</span>
+                    <span id="error-length">between 8 and 20 chars</span>
+                </div>
+                <button type="submit" disabled>Submit</button>
+            </fieldset>
+        </form>
+        <script src="pwValidator.js"></script>
+    </body>
+</html>
