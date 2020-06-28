@@ -7,59 +7,31 @@
 body {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     height: 100vh;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #registration-form {
+    border: 1px solid green;
+    padding: 1rem;
+    border-radius: 4px;
     max-width: 400px;
-}
-
-.password {
-    border: 3px solid black;
-    max-width: 350px;
-    padding: 10px;
-}
-.password * {
-    display: block;
-}
-
-#password,
-#confirmPassword {
-    width: 80%;
-}
-.password__field {
     width: 100%;
-    margin: 1rem;
-}
-
-.password__field input {
-    margin: 0.5rem 0;
-}
-
-.password__field input:focus {
-    border-color: aqua;
-    border: 1px solid aqua;
-    outline: none;
 }
 
 .display-errors {
-    visibility: hidden;
-    color: red;
+    visibility: visible;
+    margin: 0;
+    padding-left: 0.3rem;
+    font-size: 0.8rem;
 }
 
-button {
-    display: block;
+.submit-btn * {
     width: 100%;
-    background-color: rgb(47, 143, 221);
-    color: #fff;
-}
-
-button[disabled],
-button:disabled {
-    background: rgb(212, 211, 211);
-}
-
-.valid {
-    color: green;
 }
