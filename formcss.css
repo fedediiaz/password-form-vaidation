@@ -35,3 +35,37 @@ body {
 .submit-btn * {
     width: 100%;
 }
+
+/* #confirmPassword,
+#password {
+    width: 92%;
+} */
+
+.password__field {
+    position: relative;
+}
+
+.toggleView {
+    position: absolute;
+    bottom: -2px;
+    right: 40px;
+    cursor: pointer;
+    background-color: black;
+    height: 1.8rem;
+    transform: translateY(-20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggleView * {
+    position: absolute;
+    display: inline-block;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+
